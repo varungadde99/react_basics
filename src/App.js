@@ -1,10 +1,24 @@
 import logo from './logo.svg';
-import './App.css';
+import Greet from './Greet';
+import productList from './productList.json';
+import PrintList from './Utils';
+import ProductList from "./ProductList";
 
 function App() {
+  
+  //console.log(productList)  
   return (
     <div className="App">
-      <header className="App-header">
+      
+      <ProductList productListObj = {productList} />
+      
+      {/*
+        <Greet name = {"Varun"} surname={"Gadde"}/>
+        
+        <PrintList printList = {productList} />
+        
+        {productList.map((product) => <h2>{product.id}</h2>)}
+        {<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +31,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> } */}
+
+
     </div>
   );
 }
